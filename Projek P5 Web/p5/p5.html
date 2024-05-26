@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-mug-saucer" style="color: chocolate;"></i> Torrashop</a>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#Products">Products</a>
+            <a href="#Project">Customers</a>
+            <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </nav>
+    </div>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+        
+
+    <!------------HOME------------>
+    <section class="home" id="home">
+        <div class="home-page">
+            <h1>START YOUR DAY</h1>
+            <h1>WITH COFFEE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempora optio! Fugiat repellendus
+                corporis perspiciatis quaerat corrupti ex dolor suscipit eveniet debitis omnis! Iure aliquam eligendi
+                quos at numquam ad et dolor, obcaecati, cumque dicta facilis accusamus natus .</p>
+
+            <div class="btn">
+                <button id="myButton">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!----------About Us------------->
+    <section class="about" id="about">
+        <div class="about-page">
+            <img src="kopi.jpg">
+            <div class="about-text">
+                <h1>About <span>Us</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur ipsum eligendi
+                    repellendus voluptates velit quibusdam dolorum vero modi necessitatibus! Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Odio dolorem veritatis velit magnam. Ipsa doloribus vero ullam quae
+                    nostrum in voluptas perferendis quo, ex repudiandae obcaecati est, neque, impedit molestias.</p>
+                        <button class="btn-1">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!--top product-->
+    <section class="product">
+        <div class="prod-page">
+            <div class="item-prod1"></div>
+            <div class="item-prod2"></div>
+            <div class="item-prod3"></div>
+            <div class="item-prod4"></div>
+            <div class="item-prod5"></div>
+            <div class="item-prod6"></div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*NAVBAR*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(103, 103, 103, 0.19);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px; /* Adjusted for better spacing */
+    font-weight: bold;
+    background-color: #543310;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #74512D;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+
+        margin-top: 1.7rem;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+/*HOME*/
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 200px 20px;
+    /* Adjusted padding for responsiveness */
+    color: white;
+    background-image: url('bckgrndhome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-page {
+    margin-left: auto;
+    max-width: 50%;
+}
+
+.home-page h1 {
+    font-size: 40px;
+}
+
+.home-page p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.btn button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: chocolate;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 170px;
+    height: 45px;
+    transition: 0.4s ease;
+}
+
+.btn button:hover {
+    background: rgb(126, 59, 11);
+}
+
+@media (max-width: 1024px) {
+    .home-page {
+        max-width: 70%;
+        /* Increase width for medium screens */
+    }
+
+    .home-page h1 {
+        font-size: 32px;
+    }
+
+    .home-page p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 150px 20px;
+    }
+
+    .home-page {
+        max-width: 90%;
+        /* Increase width for smaller screens */
+        margin-left: 0;
+    }
+
+    .home-page h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .home-page p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .btn button {
+        width: 100%;
+        /* Full width button for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 100px 10px;
+    }
+
+    .home-page h1 {
+        font-size: 24px;
+    }
+
+    .home-page p {
+        font-size: 13px;
+    }
+
+    .btn button {
+        padding: 10px;
+        width: 100%;
+        /* Full width button for smaller screens */
+    }
+}
+
+/*ABOUT*/
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.about-page {
+    display: flex;
+    flex-direction: row; /* Default direction for larger screens */
+    align-items: center;
+}
+
+.about-page img {
+    margin: 20px;
+    border-radius: 20px;
+    width: 35rem;
+    height: 22rem;
+}
+
+.about-text {
+    margin-top: 20px;
+}
+
+.about-text h1 {
+    margin-bottom: 5px;
+    font-size: 55px;
+    margin-left: 0;
+}
+
+.about-text p {
+    width: 400px;
+    margin-left: 0;
+    text-align: justify;
+}
+
+.btn-1 {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: chocolate;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 170px;
+    height: 45px;
+    transition: 0.4s ease;
+    margin-left: 0;
+}
+
+.btn-1:hover {
+    background: rgb(126, 59, 11);
+}
+
+@media (max-width: 1024px) {
+    .about-page img {
+        width: 30rem;
+        height: 20rem;
+        margin: 10px;
+    }
+
+    .about-text h1 {
+        font-size: 45px;
+        margin-left: 0;
+    }
+
+    .about-text p {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .about-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-page img {
+        width: 25rem;
+        height: 18rem;
+        margin: 10px 0;
+    }
+
+    .about-text {
+        margin-top: 10px;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .about-text h1 {
+        font-size: 35px;
+        margin-left: 0;
+    }
+
+    .about-text p {
+        width: 90%; /* Use percentage width for smaller screens */
+        margin-left: 0;
+    }
+
+    .btn-1 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page img {
+        width: 100%; /* Full width for very small screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+
+    .about-text h1 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    .btn-1 {
+        width: 100%; /* Full width for very small screens */
+    }
+}

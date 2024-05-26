@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(asset/WhatsApp\ Image\ 2024-05-11\ at\ 09.18.57_0382a387.jpg); /* Ganti dengan URL gambar pilihan Anda */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    font-size: 32px;
+    color: rgb(201, 127, 95);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(201, 127, 95);
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.section-kanan {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 300px;
+    background-image: url(asset/download\ \(2\).jpeg);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 50px;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: wheat;
+}
+
+.author {
+    text-align: right;
+    font-style: normal;
+    color: wheat;
+}
